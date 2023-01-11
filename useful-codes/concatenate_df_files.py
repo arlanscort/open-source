@@ -1,6 +1,6 @@
 '''
-Created by Arlan Scortegagna, jan/2022
-Concatenate several DataFrame, contained in separated files, into a single .csv
+Arlan Scortegagna - jan/2022
+Concatenate dataframes contained in separated csv files into a single csv file which name is going to 'prefix'_concatenated.csv
 '''
 
 import argparse
