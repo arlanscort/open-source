@@ -12,5 +12,8 @@ parser.add_argument('prefix', type=str, help = "Inform prefix of files")
 args = parser.parse_args()
 
 all_files = glob.glob(f'{args.prefix}*')
+all_files = sorted(all_files)
+
 df = pd.concat((pd.read_csv(f) for f in all_files), ignore_index=True)
-df.to_csv(f'{args.prefix}_concatenated.csv')
+
+df.to_csv(f'{args.prefix}_concatenated.csv', index=False)
