@@ -1,2 +1,4 @@
 # open-source
-Diretório para disseminação de códigos e algoritmos para o público em geral.
+Este repositório contém códigos desenvolvidos por Arlan Scortegagna e sua equipe. O objetivo é disseminar algoritmos de implementação própria e de visualização de dados abertos que, portanto, podem ser disponibilizados para o público em geral.
+
+Todos os dados utilizados fazem referência ao diretório "data-temp" que, por razões óbvias, é apagado antes de ser comitado.
