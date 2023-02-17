@@ -35,3 +35,5 @@ for i, sr in enumerate(hietos_series):
     fig.add_trace(go.Scatter(x=sr.index, y=sr, name=hietos_nomes[i], line=dict(color=hietos_cores[i], shape='vh')))
 fig.update_layout(height=700, width=1300)
 fig.write_html('hyetographs.html')
+
+# %%

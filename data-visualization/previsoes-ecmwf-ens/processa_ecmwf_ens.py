@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 latitude = -25.4
 longitude = -49.2
 nome = 'Curitiba'
-emissao = '2022-12-02'
+emissao = '2022-02-17'
 dir = '../../temp-data' # Diretorio contendo os gribs da previsao
 
 #%% Processa os arquivos da previsao
