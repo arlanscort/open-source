@@ -11,7 +11,8 @@ import pandas as pd
 import numpy as np
 
 def hourly_aggegation(df):
-
+    print('\tHourly Aggregation - Arlan Scortegagna, feb/2023')
+    
     print('\n\tChecando registros duplicados...')
     df_dup = df.loc[df.duplicated(subset=['horestacao', 'hordatahora'], keep=False)]
     if df_dup.empty:
@@ -43,12 +44,8 @@ def hourly_aggegation(df):
 
 
 if __name__ == '__main__':
-    print('\tHourly Aggregation - Arlan Scortegagna, feb/2023')
     
-    print('\n\tCarregando DataFrame...')
+    # Exemplo
     df = pd.read_csv('../temp-data/chuva_estacoes_2016.csv', usecols=['horestacao', 'hordatahora', 'horleitura', 'horqualidade'], dtype={'horestacao':int, 'hordatahora':str, 'horleitura':float, 'horqualidade':int})
-
     df_hr, df_freq = hourly_aggegation(df)
     
-    print('\n\tSalvando DataFrame agregado')
-    df_hr.to_csv('df_hr.csv')
