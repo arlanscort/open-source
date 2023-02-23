@@ -1,6 +1,6 @@
 '''
-Arlan Scortegagna - jan/2022
-Concatenate dataframes contained in separated csv files into a single csv file which name is going to 'prefix'_concatenated.csv
+Arlan Scortegagna - jan/2023
+Concatenate DataFrames contained in separated csv files into a single csv file which name is going to 'prefix'_concatenated.csv
 '''
 
 import argparse
